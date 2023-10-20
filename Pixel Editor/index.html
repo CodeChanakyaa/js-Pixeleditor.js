@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Editor</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container disable">
+        <div class="heading">
+            <h3>PIXEL EDITOR</h3>
+        </div>
+        <div class="main">
+            <div class="view">
+                <div class="viewimage">
+                    <img src="data:image/png;base64,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"
+                        alt="">
+                </div>
+                <button class="uploadbtn"><i class="fa-solid fa-cloud-arrow-up"></i> &nbsp;Upload</button>
+                <input type="file" id="upload" name="upload" accept="image/*" hidden>
+
+                <div class="resultbtns">
+                    <button class="res"><i class="fa-solid fa-rotate-left"></i> &nbsp;Reset</button>
+                    <button class="sav"><i class="fa-solid fa-download"></i> &nbsp;Download</button>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="slider">
+                    <div class="slidervalues">
+                        <p id="slidername">Brightness</p>
+                        <p id="slidervalue">100 %</p>
+                    </div>
+                    <input type="range" name="" id="" min="0" max="200">
+                </div>
+
+                <div class="filters">
+                    <p>Filters</p>
+                    <div class="wrap">
+                        <button class="active" title="brightness" id="brightness"><i
+                                class="fa-solid fa-sun"></i></i></button>
+                        <button title="contrast" id="contrast"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                        <button title="saturate" id="saturate"><i class="fa-solid fa-droplet"></i></button>
+                        <button title="blur" id="blur"><i class="fa-solid fa-eye"></i></button>
+                        <button title="retro" id="retro"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+                </div>
+
+                <div class="alignments">
+                    <p>Alignments</p>
+                    <div class="wrap">
+                        <button title="rotateleft" id="rotateleft"><i class="fa-solid fa-rotate-left"></i></button>
+                        <button title="rotateright" id="rotateright"><i class="fa-solid fa-rotate-right"></i></button>
+                        <button title="rotatecustom" id="rotatecustom"><i class="fa-solid fa-rotate"></i></button>
+                        <button title="flipx" id="flipx"><i class="fa-solid fa-left-right"></i></button>
+                        <button title="flipy" id="flipy"><i class="fa-solid fa-up-down"></i></button>
+                    </div>
+                </div>
+
+                <div class="draw">
+                    <p>Draw</p>
+                    <div class="wrap">
+                        <button title="" id=""><i class="fa-solid fa-pen"></i></button>
+                        <button title="" id=""><i class="fa-regular fa-square-full"></i></button>
+                        <button title="" id=""><i class="fa-regular fa-circle"></i></button>
+                        <button title="" id=""><i class="fa-regular fa-comment"></i></i></button>
+                        <button title="" id=""><i class="fa-solid fa-eraser"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
